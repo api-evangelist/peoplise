@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: peoplise.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 16 16:18:02 2026 GMT
+  hsts: false
+- host: www.logo.com.tr
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  5 14:04:43 2026 GMT
+  hsts: false
+domains:
+- domain: peoplise.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: logo.com.tr
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

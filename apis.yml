@@ -1,7 +1,28 @@
 aid: peoplise
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/peoplise.png
 name: Peoplise
-description: Peoplise is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Peoplise (now Logo Peoplise) is a Turkish human-resources technology SaaS that
+  digitalizes recruitment and hiring workflows for enterprises. The platform
+  covers the full talent-acquisition funnel: candidate sourcing and application
+  tracking, automated pre-screening and assessments, one-way and live video
+  interviews, reference checking, and digital onboarding. Originally a 500 Global
+  (500 Startups) portfolio company, Peoplise was acquired by Logo (Logo Yazilim),
+  one of Turkey's largest enterprise-software vendors, and is marketed as "Logo
+  Peoplise" at logo.com.tr. Public probing found a marketing/product site only;
+  no developer portal, OpenAPI/Swagger specification, /.well-known/ discovery
+  surface, or documented public API was found at this time.
 url: https://raw.githubusercontent.com/api-evangelist/peoplise/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,23 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
 tags:
 - Company
+- Human Resources
+- HR Tech
+- Recruitment
+- Hiring
+- Talent Acquisition
+- Video Interview
+- Onboarding
+- SaaS
+- Turkey
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +56,17 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/peoplise-domain-security.yml
 - type: Website
   url: https://peoplise.com
+- type: Website
+  name: Logo Peoplise product page
+  url: https://www.logo.com.tr/peoplise
+- type: Blog
+  url: https://www.logo.com.tr/blog
+- type: Support
+  name: Logo Destek Merkezi (Support Center)
+  url: https://www.logo.com.tr/logo-destek-merkezi
+- type: PrivacyPolicy
+  url: https://www.logo.com.tr/logo-gizlilik-politikalari
